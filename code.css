@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    background: linear-gradient(to left, rgb(85, 187, 220),pink);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+    color: navy;
+}
+.info-text{
+    text-align: center;
+    color:darkblue;
+    font-size: 20px;
+}
+.app{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 50px;
+    justify-content:center;
+    padding: 100px;
+}
+.note{
+    padding: 15px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.5);
+    font-size: 18px;
+    height: 200px;
+    color: black;
+    border: none;
+    outline: none;
+    background:lightyellow;
+    box-sizing: border-box;       /*eliminate extra size*/
+}
+.note::placeholder{
+    color: cornflowerblue;
+    font-weight: bold;
+    opacity: 40%;
+}
+.note:hover,.note:focus{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 350ms ease;
+}
+.btn{
+    height: 200px;
+    border-color: rgb(255, 255, 255, 10%) ;
+    background-color: rgb(255, 255, 255 ,20%) ;
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(0, 0, 0,30%);
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background: rgb(255, 255, 255,50%);
+    transition: all 200ms ease-in-out;
+    color: rgb(0, 0, 0,60%);
+
+}
